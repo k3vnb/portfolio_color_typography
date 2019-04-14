@@ -1,21 +1,44 @@
+/* green: #87cc89;
+teal: #284753;
+blue: #58a0c5;
+blond: #e7d6bf 
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Questrial', sans-serif;
+*/
+
+
+
+/* global */
+
 *, *:before, *:after {
     box-sizing: border-box;
   }
   body {
       position: relative;
       margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
   }
+
+  h2 {
+    font-family: 'Questrial', sans-serif;
+}
 
   /* header & header nav */
 
   header {
       width: 100%;
       height: 50px;
-      background-color: grey;
+      background-color: #2d3f75;
       display: flex;
       justify-content: space-between;
       padding: 1% 5%;
       position: fixed;
+      color: white;
+  }
+
+  header a {
+      color: white;
+      text-decoration: none;
   }
 
   header nav {
@@ -27,10 +50,11 @@
   /* splash-page */
 
 .splash-page-container {
-    background-color: lightgrey;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    background-color: #9da4f5;
+    background-image: url('https://www.princeton.edu/sites/default/files/styles/half_2x/public/images/2018/01/clouds-19.jpg?itok=Qfa5j6NW');  
+    height: 100vh;   
+    display: flex;     
+    justify-content: center;;
     align-items: center;
 }
 
@@ -40,7 +64,8 @@
     max-height: 500px;
     width: 80%;
     max-width: 600px;
-    background-color: white;
+    color: white;
+    background-color: #221d46bf;
     border: 1px solid black;
     padding: 5%;
     text-align: center;
@@ -52,7 +77,9 @@
 .splash-page-main-content h1 {
     font-size: 40px;
     margin: 0%;
+    font-family: 'Merriweather Sans', sans-serif;
 }
+
 
 
 .splash-page-main-content .page-links {
@@ -147,7 +174,7 @@
 
 .projects-section-hero {
     height: 30%;
-    background-color: lightgrey;
+    background-color: #4c4396;
     padding: 5%;
     display: flex;
     justify-content: flex-end;
@@ -238,7 +265,7 @@
 
 .contacts-section-hero {
     height: 30%;
-    background-color: lightgrey;
+    background-color: #4c4396;
     padding: 5%;
     display: flex;
     justify-content: flex-end;
@@ -263,7 +290,7 @@
 /* footer */
 
 footer {
-    background-color: grey;
+    background-color: #2d3f75;
     position: fixed;
     bottom: 0;
     width: 100%;
