@@ -1,7 +1,10 @@
-/* green: #87cc89;
-teal: #284753;
-blue: #58a0c5;
-blond: #e7d6bf 
+/* 
+fuscia: #ff09f7
+transparent purple: #cf0dffbf
+full fuscia 2: #cf0dff;
+purple: #b70fe0;
+sky blue: #6db9ea;
+
 font-family: 'Merriweather Sans', sans-serif;
 font-family: 'Questrial', sans-serif;
 */
@@ -28,7 +31,7 @@ font-family: 'Questrial', sans-serif;
   header {
       width: 100%;
       height: 50px;
-      background-color: #2d3f75;
+      background-color: #cf0dffbf;
       display: flex;
       justify-content: space-between;
       padding: 1% 5%;
@@ -39,6 +42,7 @@ font-family: 'Questrial', sans-serif;
   header a {
       color: white;
       text-decoration: none;
+      font-size: 16px;
   }
 
   header nav {
@@ -66,9 +70,11 @@ font-family: 'Questrial', sans-serif;
     max-width: 600px;
     color: white;
     background-color: #221d46bf;
-    border: 1px solid black;
+    border: 2px inset #d00dffd1;
+    box-shadow: 0px 1px 4px #ff09f782;
     padding: 5%;
     text-align: center;
+    text-shadow: 1px 1px 1px #cf0dff;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -95,7 +101,9 @@ font-family: 'Questrial', sans-serif;
     border: .5px solid black;
     padding: 1% 2%;
     width: 80%;
-    background-color: lightgrey;
+    background-color: #05010673;
+    color: white;
+    text-decoration: none;
 }
 @media screen and (min-width: 550px){
     .splash-page-main-content .page-links {
@@ -106,10 +114,7 @@ font-family: 'Questrial', sans-serif;
     }
     
     .splash-page-main-content .page-links a {
-        border: .5px solid black;
-        padding: 1% 2%;
         width: 25%;
-        background-color: lightgrey;
     }
 }
 
@@ -138,9 +143,12 @@ font-family: 'Questrial', sans-serif;
 }
 
 .about-section-bottom-line {
-    text-align: justify;
+    text-align: left;
+    text-indent: 31px;
     margin-top: 50px;
-    line-height: 22px;
+    hyphens: auto;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 @media screen and (min-width: 550px){
@@ -174,7 +182,7 @@ font-family: 'Questrial', sans-serif;
 
 .projects-section-hero {
     height: 30%;
-    background-color: #4c4396;
+    background-color: #b70fe0;
     padding: 5%;
     display: flex;
     justify-content: flex-end;
@@ -189,7 +197,7 @@ font-family: 'Questrial', sans-serif;
 
 .project-card-outer {
     border: 1px solid black;
-    background-color: lightgrey;
+    box-shadow: 2px 2px 2px #00000052;
     height: 200px;
     padding: 2%;
     display: flex;
@@ -265,7 +273,7 @@ font-family: 'Questrial', sans-serif;
 
 .contacts-section-hero {
     height: 30%;
-    background-color: #4c4396;
+    background-color: #b70fe0;
     padding: 5%;
     display: flex;
     justify-content: flex-end;
@@ -276,6 +284,8 @@ font-family: 'Questrial', sans-serif;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+    margin-bottom: 40px;
+    background-image: url('https://www.princeton.edu/sites/default/files/styles/half_2x/public/images/2018/01/clouds-19.jpg?itok=Qfa5j6NW');  
 }
 
 .contacts-section-main-content > div {
@@ -290,10 +300,12 @@ font-family: 'Questrial', sans-serif;
 /* footer */
 
 footer {
-    background-color: #2d3f75;
+    color: #cf0dff;;
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 25px;
     padding: 1%;
+    padding-bottom: 3%;
+    text-align: right;
 }
